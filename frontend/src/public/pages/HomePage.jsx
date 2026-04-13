@@ -115,6 +115,26 @@ export default function HomePage({
         </section>
       )}
 
+      <section className="container-app pb-8 pt-2" data-aos="fade-up">
+        <div className="card-clean flex flex-col items-start justify-between gap-4 p-5 md:flex-row md:items-center">
+          <div>
+            <p className="text-sm font-semibold text-red-500">Butuh estimasi pengiriman?</p>
+            <h2 className="mt-1 text-xl font-bold text-slate-900 md:text-2xl">Cek Ongkos Kirim</h2>
+            <p className="mt-1 text-sm text-slate-600">
+              Cek ongkir dari berbagai ekspedisi berdasarkan kota tujuan dan berat barang.
+            </p>
+          </div>
+          <a
+            href="https://ongkoskirim.id/"
+            target="_blank"
+            rel="noreferrer"
+            className="btn-primary px-5 py-3"
+          >
+            Cek Ongkir Sekarang
+          </a>
+        </div>
+      </section>
+
       <Footer settings={settings} />
       <WhatsAppButton number={settings?.whatsapp} />
     </main>
